@@ -25,6 +25,7 @@ namespace API
             try
             {
                 var context = services.GetRequiredService<DataContext>();
+                // context.Database.EnsureDeleted();
                 await context.Database.MigrateAsync();
                 await Seed.SeedData(context);
 

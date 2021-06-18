@@ -9,7 +9,7 @@ namespace Domain
 
         }
 
-        public DbSet<Activity> Activities { get; set; }
+        public DbSet<Activity> Activitiees { get; set; }
 
     }
 }
